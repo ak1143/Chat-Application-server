@@ -28,6 +28,8 @@ const crateUser = async (numUsers) => {
     } catch (error) {
         console.log("error occured at creating seeders:",error)
     }
-}
+};
 
-export {crateUser}
+
+
+export { crateUser }

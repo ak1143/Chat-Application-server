@@ -6,6 +6,7 @@ import cookieParser from "cookie-parser";
 import userRouter from "./src/routes/user.routes.js"
 import chatRouter from "./src/routes/chat.routes.js"
 import { crateUser } from "./src/seeders/user.seeders.js";
+import { createGroupChats, createMessagesInAChat, createSingleChats } from "./src/seeders/chat.seeders.js";
 
 dotenv.config({
     path:"./.env"
@@ -17,6 +18,9 @@ connectDB(process.env.MONGODB_URI)
 
 // seeders: to create a dummy data
 // crateUser(10)
+// createSingleChats(10);
+// createGroupChats(10)
+// createMessagesInAChat("66d6e1981dd2d8e26f0ab332",50)
 
 // middlewares: without middlewares you can destructure.
 app.use(express.json());
